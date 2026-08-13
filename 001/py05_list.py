@@ -7,7 +7,7 @@
 #     print(i)    #列表可遍历
 #
 
- #列表常见操作
+#列表常见操作
  #新增,添加元素
  #append() extend() insert()
 # li = ['one','two','three']
@@ -261,6 +261,7 @@ contacts = [['张三', '13800001111'], ['李四', '13900002222']]
 while True :
     name = input('姓名:')
     if name == 'q' :
+        print('已退出录入系统')
         break
     tel = input('电话:')
     exists =False
@@ -284,3 +285,15 @@ for i in contacts :
         break
 if exists == False :
     print('不存在此人')
+
+#删除
+name = input('输入需要删除的姓名：')
+for i in contacts :
+    j = i[0]
+    print(f'{i}')
+    if name == j :
+        print('存在一样的')
+        contacts.remove(i)
+        print('删除成功！')
+        break
+print(contacts)
