@@ -114,14 +114,67 @@
 
 # 2.定义一个函数,用于判断一个字符串是否是回文串,返回bool值。
 # 把字符串反转,如果和原字符串相同,就是回文串。(如:"1evel","radar","黄山落叶松叶落山黄")
-def main(str1):
-    str2 = str1.reverse()
-    if str2 == str1 :
-        return True
-    else:
-        return False
-str1 = input('输入字符串，判断是否是回文串：')
-print(type(str1))
-print(main(str1))
+# def main(str1):
+#     str2 = str1[::-1]
+#     if str2 == str1 :
+#         return True
+#     else:
+#         return False
+# str1 = input('输入字符串，判断是否是回文串：')
+# print(main(str1))
+# if main(str1):
+#     print('是回文串')
+# else:
+#     print('不是回文串')
+#
 # 3.定义一个函数:完成时间转换功能,将传入的秒转换为小时、分钟、秒。
+# def time_res(time1):
+#     res_hour = time1 // 3600
+#     res_min = (time1 - res_hour * 3600) // 60
+#     res_sec = time1 - res_hour * 3600 - res_min * 60
+#     return res_hour , res_min , res_sec
+#
+# time1 = round(float(input('请输入秒的值：')),0)
+# time_hour,time_min,time_sec =time_res(time1)
+# print(f'{time_hour}小时{time_min}分钟{time_sec}秒')
+
 # 4.定义一个函数:根据传入的三角形三个边的边长,判定三角形的类型(等边、等腰、普通,或者不能构成三角形)。
+# def main(x,y,z):
+#     dict1 =[x,y,z]
+#     dict1.sort()
+#     if dict1[0] + dict1[1] <= dict1[2]:
+#         typ = '无法构成三角形'
+#     elif dict1[0] == dict1[1] and dict1[1] == dict1[2]:
+#         typ = '等边三角形'
+#     elif dict1[0] == dict1[1] or dict1[1] == dict1[2] or dict1[2] == dict1[0]:
+#         typ = '等腰三角形'
+#     elif dict1[2] * dict1[2] == dict1[1] * dict1[1] + dict1[0] * dict1[0]:
+#         typ = '直角三角形'
+#     elif dict1[2] * dict1[2] > dict1[1] * dict1[1] + dict1[0] * dict1[0]:
+#         typ = '钝角三角形'
+#     elif dict1[2] * dict1[2] < dict1[1] * dict1[1] + dict1[0] * dict1[0]:
+#         typ = '锐角三角形'
+#     return typ
+#
+# x = int(input('请输入三角形第1个边长：'))
+# y = int(input('请输入三角形第2个边长：'))
+# z = int(input('请输入三角形第3个边长：'))
+# res = main(x,y,z)
+# print(res)
+
+
+# 变量作用域
+# global 全局变量 函数外也能读到函数内的global变量
+# num1 = 1
+# def fun1():
+#     global num1
+#     num1 = 100
+#     print(num1)
+#
+# fun1()
+# print(num1)
+
+# 函数的参数
+# 传参方式
+# 位置传参
+
