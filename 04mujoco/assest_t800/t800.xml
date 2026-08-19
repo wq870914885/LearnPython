@@ -1,5 +1,5 @@
 <mujoco model="global_model">
-    <include file="robot/t800/xml/serial_t800.xml"/>
+    <include file="t800/xml/serial_t800.xml"/>
     <include file="environment/ground.xml"/>
     <!-- 15kg box (1m × 1m × 2m) -->
     <!-- <worldbody>
